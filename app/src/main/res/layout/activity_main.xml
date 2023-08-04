@@ -12,12 +12,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginEnd="42dp"
+        android:layout_marginBottom="56dp"
         android:onClick="onClick"
         android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/pause"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="627dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/pause"
@@ -27,7 +28,8 @@
         android:onClick="onClick"
         android:text="Pause"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="161dp" />
+        app:layout_constraintEnd_toStartOf="@+id/stop"
+        app:layout_constraintStart_toEndOf="@+id/play" />
 
     <Button
         android:id="@+id/stop"
@@ -35,24 +37,24 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="42dp"
         android:layout_marginEnd="27dp"
+        android:layout_marginBottom="56dp"
         android:onClick="onClick"
         android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/pause"
-        tools:layout_editor_absoluteY="627dp" />
+        app:layout_constraintStart_toEndOf="@+id/pause" />
 
     <SeekBar
         android:id="@+id/seekBar"
-        android:layout_width="119dp"
-        android:layout_height="16dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="568dp"
-        android:layout_marginEnd="144dp"
+        android:layout_width="260dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="596dp"
+        android:layout_marginEnd="77dp"
         android:max="10"
         android:progress="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
